@@ -1,1 +1,104 @@
 
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: fff;
+}
+
+.people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.person {
+  width: 200px;
+  transition: 1s ease;
+}
+
+.person__photo {
+  position: relative;
+}
+
+.person__photo-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 1s ease;
+}
+
+.person__rank {
+  position: absolute;
+  font-size: 16px;
+  color: #8B0000;
+  font-weight: 700;
+  background-color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  top: 50%;
+  right: 10px;
+
+  transform: translateY(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.person__details {
+  font-size: 21.6px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+
+}
+
+.person__name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2F4F4F;
+
+}
+
+.person__extra {
+  transition: 1s ease;
+}
+
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  place-content: center;
+  box-sizing: border-box;
+  place-content: center;
+  row-gap: 30px;
+  column-gap: 40px;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(4, 200px);
+  }
+}
+
+
+.person:hover {
+  border-radius: 12px;
+  transform: scale(1.2);
+  background-color: #EEEEEE;
+
+ .person__photo-image {
+    border-radius: 60px;
+  }
+  .person__extra {
+    color: #000000;
+  }
+}
+
+
+
+
+
