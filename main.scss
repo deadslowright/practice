@@ -21,6 +21,10 @@ html {
   position: relative;
 }
 
+.person--hover {
+  width: 220px;
+}
+
 .person__photo-image {
   width: 200px;
   height: 200px;
@@ -76,6 +80,7 @@ html {
   place-content: center;
   row-gap: 30px;
   column-gap: 40px;
+  padding-top: 30px;
 }
 
 @media (min-width: 1000px) {
